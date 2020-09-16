@@ -1,9 +1,9 @@
 #!/bin/sh
-echo "htg.service: ## Starting ##" | systemd-cat -p info
+systemd-cat -t htg echo "htg.service: ## Starting ##"
 
 while :
 do
 	TIMESTAMP=$(date)
-echo "htg.service timestamp: (TIMESTAMP)" | systemd-cat -p info
+systemd-cat -t htg echo "htg.service timestamp: (TIMESTAMP)"
 sleep 60
 done

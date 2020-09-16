@@ -1,0 +1,1 @@
+journalctl -b -t htg
