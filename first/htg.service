@@ -1,0 +1,16 @@
+[Unit]
+Description=How-To Geek Sample Service
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/htg.sh
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+Wanted-By=multi-user.target
+
