@@ -1,0 +1,7 @@
+[Unit]
+Description=How-To Geek Sample Service
+
+[Service]
+ExecStart=/usr/local/bin/htg2.sh
+#with ExecStart and nothing else, assumes "Type=simple"
+
